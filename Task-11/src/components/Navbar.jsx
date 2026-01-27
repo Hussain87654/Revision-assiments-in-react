@@ -75,7 +75,7 @@ const Navbar = () => {
           {/* MOBILE TOGGLE */}
           <div className="md:hidden">
             <IconButton onClick={() => setMobileOpen(true)} className="text-white">
-              <Menu />
+              <Menu  className=' text-white'/>
             </IconButton>
           </div>
         </div>
@@ -97,7 +97,7 @@ const Navbar = () => {
               <span className="text-xl font-bold text-white uppercase">NovaStack</span>
             </div>
             <IconButton onClick={() => setMobileOpen(false)} className="text-white">
-              <X />
+              <X  className='text-white'/>
             </IconButton>
           </div>
 
@@ -118,10 +118,11 @@ const Navbar = () => {
             <Button fullWidth className="text-white border border-white/10 py-4 rounded-2xl">
               Log In
             </Button>
-
+            <Link to="/auth">
             <Button fullWidth className="bg-cyan-500 text-[#020617] font-bold py-4 rounded-2xl">
               Get Started <ChevronRight size={18} />
             </Button>
+            </Link>
           </div>
         </Box>
       </Drawer>
